@@ -1,2 +1,12 @@
-# TicTacToe_JAVA
-Java Tic Tac Toe: A console-based game featuring dynamic board sizes (3x3, 4x4), player vs. AI, player vs. player, and AI vs. AI modes. Implements Minimax algorithm with Alpha-Beta pruning for challenging AI gameplay, and colorful board display for an enhanced user experience.
+:video_game: Java Tic Tac Toe
+A classic Tic Tac Toe game implemented in Java, featuring dynamic board sizes, player vs. AI, player vs. player, and AI vs. AI modes. The game uses the Minimax algorithm with Alpha-Beta pruning for AI decision-making and colorful console output for an enhanced gaming experience.
+
+:sparkles: Features
+:computer: Dynamic Board Sizes: Choose between a 3x3 or 4x4 board.
+:busts_in_silhouette: Multiple Game Modes:
+Player vs. Computer
+Player vs. Player
+Computer vs. Computer
+:brain: Intelligent AI: Utilizes Minimax algorithm with Alpha-Beta pruning.
+:art: Colorful Console Display: Enhanced user interface with colored board representation.
+:rocket: Getting Started

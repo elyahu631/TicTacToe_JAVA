@@ -379,7 +379,7 @@ abstract class Player {
         }
         return bestMove;
     }
-write line discription for my github on this project
+    
     /*Alpha-beta pruning is a sophisticated technique within the minimax algorithm, used to find the best move in games,
      assuming the opponent is also playing optimally.
 

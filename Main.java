@@ -561,14 +561,19 @@ class HumanPlayer extends Player {
     private boolean processInputAndMakeMove(String input, GameBoard board) {
         try {
             int move = Integer.parseInt(input);
-            if (move >= 11 && move <= (board.getSize() * 11)) { 
-                int row = move / 10 - 1; 
-                int col = move % 10 - 1; 
-                return board.makeMove(row, col, symbol);
-            } else {
-                System.out.println("Invalid input. Please enter a two-digit number (e.g., 12 for row 1, column 2).");
-                return false;
+            int boardSize = board.getSize();
+            int maxInput = boardSize * 11; // e.g., 33 for 3x3, 44 for 4x4
+
+            if (move >= 11 && move <= maxInput) {
+                int row = move / 10 - 1; // calculate row index
+                int col = move % 10 - 1; // calculate column index
+
+                if (row < boardSize && col < boardSize) {
+                    return board.makeMove(row, col, symbol);
+                }
             }
+            System.out.println("Invalid input. Please enter a valid move (e.g., 12 for row 1, column 2).");
+            return false;
         } catch (NumberFormatException e) {
             System.out.println("Invalid input. Please enter a two-digit number.");
             return false; 
